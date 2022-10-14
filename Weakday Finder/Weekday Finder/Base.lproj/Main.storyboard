@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weakday_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekday Finder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2i-Vq-qAo">
+                                <rect key="frame" x="240" y="82" width="120" height="32"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-jQ-m7T">
+                                <rect key="frame" x="20" y="168" width="560" height="122"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="wyg-AP-HG9">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="122"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l96-Ry-7xM">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="34"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxV-YU-7J0">
+                                                <rect key="frame" x="0.0" y="46" width="49" height="32"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrh-E1-Mgp">
+                                                <rect key="frame" x="0.0" y="90" width="33" height="32"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="hk9-FE-YI2"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="52s-gZ-oh8">
+                                        <rect key="frame" x="70" y="0.0" width="490" height="122"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wCV-kY-0eM">
+                                                <rect key="frame" x="0.0" y="0.0" width="490" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sC1-6R-BTr">
+                                                <rect key="frame" x="0.0" y="44" width="490" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V0x-cC-Zeh">
+                                                <rect key="frame" x="0.0" y="88" width="490" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wyg-AP-HG9" secondAttribute="bottom" id="03s-VQ-caw"/>
+                                    <constraint firstItem="52s-gZ-oh8" firstAttribute="top" secondItem="bO1-jQ-m7T" secondAttribute="top" id="Lmf-QQ-7HE"/>
+                                    <constraint firstItem="wyg-AP-HG9" firstAttribute="top" secondItem="bO1-jQ-m7T" secondAttribute="top" id="xP7-ng-bHW"/>
+                                    <constraint firstAttribute="bottom" secondItem="52s-gZ-oh8" secondAttribute="bottom" id="xhx-2f-5XS"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohJ-0h-b6k">
+                                <rect key="frame" x="252" y="479" width="97" height="46"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Finde day">
+                                    <fontDescription key="titleFontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="findeDayPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ntq-CI-1o6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here you will see the day of the weak" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynF-o0-7Wi">
+                                <rect key="frame" x="199" y="335" width="202" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="202" id="Foh-L4-lzH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e2i-Vq-qAo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0r9-SB-tNU"/>
+                            <constraint firstItem="bO1-jQ-m7T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Yw-Iw-hIh"/>
+                            <constraint firstItem="ohJ-0h-b6k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A3e-3s-TJa"/>
+                            <constraint firstItem="bO1-jQ-m7T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IJg-lo-dMT"/>
+                            <constraint firstItem="e2i-Vq-qAo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="R43-i6-DCh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bO1-jQ-m7T" secondAttribute="trailing" constant="20" id="TOl-Bb-iLP"/>
+                            <constraint firstItem="bO1-jQ-m7T" firstAttribute="top" secondItem="e2i-Vq-qAo" secondAttribute="bottom" constant="54" id="a07-6O-xpm"/>
+                            <constraint firstItem="ynF-o0-7Wi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dnJ-vx-EWx"/>
+                            <constraint firstItem="ohJ-0h-b6k" firstAttribute="top" secondItem="ynF-o0-7Wi" secondAttribute="bottom" constant="80" id="lvh-Cb-EMn"/>
+                            <constraint firstItem="ynF-o0-7Wi" firstAttribute="top" secondItem="bO1-jQ-m7T" secondAttribute="bottom" constant="45" id="oVH-qn-bM3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateTextField" destination="wCV-kY-0eM" id="3e3-Ba-B6l"/>
+                        <outlet property="monthTextField" destination="sC1-6R-BTr" id="gKE-7C-g0w"/>
+                        <outlet property="resultLabel" destination="ynF-o0-7Wi" id="MIb-PW-RO7"/>
+                        <outlet property="welcomeLabel" destination="e2i-Vq-qAo" id="G3L-mh-7B8"/>
+                        <outlet property="yearTextField" destination="V0x-cC-Zeh" id="Uzj-GI-g69"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="49.553571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
